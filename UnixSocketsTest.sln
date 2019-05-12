@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnixSocketsServer", "UnixSocketsTest.vcxproj", "{D9E7883C-ADCC-48FF-BE70-AADE1D839F53}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnixSocketsClient", "UnixSocketsClient.vcxproj", "{E62DC6E2-6064-4D6F-A335-AADF18AFCFBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9E7883C-ADCC-48FF-BE70-AADE1D839F53}.Debug|x64.ActiveCfg = Debug|x64
+		{D9E7883C-ADCC-48FF-BE70-AADE1D839F53}.Debug|x64.Build.0 = Debug|x64
+		{D9E7883C-ADCC-48FF-BE70-AADE1D839F53}.Release|x64.ActiveCfg = Release|x64
+		{D9E7883C-ADCC-48FF-BE70-AADE1D839F53}.Release|x64.Build.0 = Release|x64
+		{E62DC6E2-6064-4D6F-A335-AADF18AFCFBF}.Debug|x64.ActiveCfg = Debug|x64
+		{E62DC6E2-6064-4D6F-A335-AADF18AFCFBF}.Debug|x64.Build.0 = Debug|x64
+		{E62DC6E2-6064-4D6F-A335-AADF18AFCFBF}.Release|x64.ActiveCfg = Release|x64
+		{E62DC6E2-6064-4D6F-A335-AADF18AFCFBF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBC7CC63-8010-4984-AE97-57A1161129E9}
+	EndGlobalSection
+EndGlobal
