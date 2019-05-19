@@ -1,12 +1,13 @@
-#ifdef __linux__
+#if defined( __linux__ ) || defined( __CYGWIN__ )
 #include <unistd.h>
 #include <sys/socket.h>
 #include <sys/un.h>
-#else
+#else // Windows!
 //#include <windows.h>
 #include <winsock2.h>
 #include <afunix.h>
 #endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "common.h"

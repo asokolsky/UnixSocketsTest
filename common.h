@@ -1,7 +1,13 @@
+#if defined( __linux__ ) || defined( __CYGWIN__ )
+
+#define closesocket close
+#define _unlink unlink
+
+#endif
 
 int init_sockets()
 {
-#ifdef __linux__
+#if defined( __linux__ ) || defined( __CYGWIN__ )
 	return 0;
 #else
 	WSADATA WsaData;
@@ -11,7 +17,7 @@ int init_sockets()
 
 void shut_sockets()
 {
-#ifdef __linux__
+#if defined( __linux__ ) || defined( __CYGWIN__ )
 	;
 #else
 	WSACleanup();
@@ -19,5 +25,10 @@ void shut_sockets()
 }
 
 char *socket_path =
-  "c:/temp/test.socket";
+#if defined( __linux__ ) || defined( __CYGWIN__ )
+  "/var/run/test.socket";
 //"\0hidden";
+#else
+  "c:/temp/test.socket";
+#endif
+

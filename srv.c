@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#ifdef __linux__
+#if defined( __linux__ ) || defined( __CYGWIN__ )
 #include <unistd.h>
 #include <sys/socket.h>
 #include <sys/un.h>
